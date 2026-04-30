@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en" data-theme="retro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#05060a" />
+  <title>Muhammad Rashedul Islam // SQA Engineer</title>
+  <meta name="description" content="Muhammad Rashedul Islam — SQA Engineer specialising in Selenium &amp; Appium automation, full‑stack development, and quality engineering. Retro‑futuristic portfolio." />
+  <meta name="author" content="Muhammad Rashedul Islam" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://thisisrashedul.netlify.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Muhammad Rashedul Islam // SQA Engineer" />
+  <meta property="og:description" content="Breaking systems to build better ones. Retro‑futuristic portfolio of an SQA engineer with full‑stack chops." />
+  <meta property="og:url" content="https://thisisrashedul.netlify.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Performance: preconnect to fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Favicon: inline SVG, no extra request -->
+  <link rel="icon" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%23050810"/><text x="50%" y="58%" text-anchor="middle" font-family="monospace" font-size="36" fill="%2300ffa3" font-weight="700">R_</text></svg>' />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Rashedul Islam",
+    "jobTitle": "SQA Engineer",
+    "email": "mailto:thisisrashedul@gmail.com",
+    "telephone": "+8801794876373",
+    "url": "https://thisisrashedul.netlify.app/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dhaka",
+      "addressCountry": "Bangladesh"
+    },
+    "sameAs": [
+      "https://github.com/Rashedul98",
+      "https://www.linkedin.com/in/thisisrashedul1998"
+    ],
+    "knowsAbout": ["Selenium","Appium","Test Automation","JavaScript","Python","React","Node.js","Flutter","MongoDB","FastAPI"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Boot screen -->
+  <div id="boot" class="boot" aria-hidden="true">
+    <div class="boot__inner">
+      <pre class="boot__logo">R_</pre>
+      <div class="boot__line">[ OK ] init quality.kernel</div>
+      <div class="boot__line">[ OK ] mount /dev/automation</div>
+      <div class="boot__line">[ OK ] handshake selenium ✓ appium ✓</div>
+      <div class="boot__line boot__last">[ READY ] welcome.user</div>
+    </div>
+  </div>
+
+  <!-- CRT overlay -->
+  <div class="crt" aria-hidden="true">
+    <div class="crt__scanlines"></div>
+    <div class="crt__noise"></div>
+    <div class="crt__vignette"></div>
+  </div>
+
+  <!-- Top status bar / nav -->
+  <header class="topbar" role="banner">
+    <a href="#hero" class="topbar__brand" aria-label="Home">
+      <span class="dot"></span>
+      <span class="brand__text">rashedul<span class="cursor">_</span></span>
+    </a>
+    <nav class="topbar__nav" aria-label="Primary">
+      <a href="#about">about</a>
+      <a href="#experience">experience</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#certs">certs</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <div class="topbar__actions">
+      <button id="themeToggle" class="iconbtn" aria-label="Toggle retro / modern theme" title="Toggle theme">
+        <span class="iconbtn__label" data-retro="RETRO" data-modern="MODERN">RETRO</span>
+      </button>
+      <button id="soundToggle" class="iconbtn" aria-label="Toggle sound" title="Toggle sound" aria-pressed="false">
+        <span aria-hidden="true">♪</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="content">
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__chip">
+          <span class="pulse"></span> ONLINE · DHAKA, BD · v2026.04
+        </div>
+        <h1 class="hero__name">
+          <span class="glitch" data-text="MUHAMMAD">MUHAMMAD</span>
+          <span class="glitch hero__last" data-text="RASHEDUL ISLAM">RASHEDUL ISLAM</span>
+        </h1>
+        <p class="hero__role">
+          &gt; <span id="typed" aria-live="polite"></span><span class="caret">▌</span>
+        </p>
+        <p class="hero__tag">
+          “Breaking systems to build better ones.”
+        </p>
+
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">view.projects()</a>
+          <a href="#contact" class="btn btn--ghost">open_channel()</a>
+        </div>
+
+        <dl class="hero__stats" aria-label="Quick stats">
+          <div><dt>Role</dt><dd>SQA Engineer</dd></div>
+          <div><dt>Stack</dt><dd>Full‑stack + Automation</dd></div>
+          <div><dt>Status</dt><dd><span class="ok">● available</span></dd></div>
+        </dl>
+      </div>
+
+      <button class="scrollhint" aria-label="Scroll" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+        <span></span>
+      </button>
+    </section>
+
+    <!-- ABOUT / TERMINAL -->
+    <section id="about" class="section">
+      <header class="section__head">
+        <span class="section__num">// 01</span>
+        <h2>about.exe</h2>
+        <p class="section__sub">A short trace of who's behind the keyboard.</p>
+      </header>
+
+      <div class="terminal" role="region" aria-label="About terminal">
+        <div class="terminal__bar">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--amber"></span>
+          <span class="dot dot--green"></span>
+          <span class="terminal__title">~ /about — zsh</span>
+        </div>
+        <div class="terminal__body">
+          <p><span class="prompt">guest@rashedul</span>:<span class="path">~</span>$ whoami</p>
+          <p class="out">muhammad_rashedul_islam — SQA engineer &amp; builder.</p>
+          <p><span class="prompt">guest@rashedul</span>:<span class="path">~</span>$ cat profile.md</p>
+          <p class="out">Computer Science graduate from Daffodil International University. I write tests that protect users and code that ships features. I love automation, full‑stack development, and finding the bug everyone missed.</p>
+          <p><span class="prompt">guest@rashedul</span>:<span class="path">~</span>$ ls focus/</p>
+          <p class="out">quality_engineering/  test_automation/  full_stack_dev/  clean_code/  modern_ui/</p>
+          <p><span class="prompt">guest@rashedul</span>:<span class="path">~</span>$ <span class="caret">▌</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <header class="section__head">
+        <span class="section__num">// 02</span>
+        <h2>career.log</h2>
+        <p class="section__sub">Mission timeline — most recent first.</p>
+      </header>
+
+      <ol class="timeline">
+        <li class="tl">
+          <div class="tl__dot"></div>
+          <div class="tl__card">
+            <div class="tl__meta">
+              <span class="tag">2026 — Present</span>
+              <span class="tl__loc">Dhaka, Bangladesh</span>
+            </div>
+            <h3>SQA Engineer · <em>Bitmorpher Limited</em></h3>
+            <ul class="bullets">
+              <li>Bug reporting workflows and reproducible defect pipelines.</li>
+              <li>Automation scripting with <strong>Selenium</strong> (web) and <strong>Appium</strong> (mobile).</li>
+              <li>Cross‑platform regression suites + CI integration.</li>
+            </ul>
+            <div class="chips">
+              <span>Selenium</span><span>Appium</span><span>Test Design</span><span>CI</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="tl">
+          <div class="tl__dot"></div>
+          <div class="tl__card">
+            <div class="tl__meta">
+              <span class="tag">07/2025 — 09/2025</span>
+              <span class="tl__loc">Dhaka, Bangladesh</span>
+            </div>
+            <h3>Software Engineer Intern · <em>Nazihar IT Solution Limited</em></h3>
+            <ul class="bullets">
+              <li>Contributed to a Temenos <strong>T24</strong> core‑banking module.</li>
+              <li>Built services with <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>MySQL</strong>.</li>
+              <li>Wrote unit/integration tests for critical financial flows.</li>
+            </ul>
+            <div class="chips">
+              <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>T24</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="tl">
+          <div class="tl__dot"></div>
+          <div class="tl__card">
+            <div class="tl__meta">
+              <span class="tag">2020 — 2025</span>
+              <span class="tl__loc">B.Sc. CIS · Daffodil International University</span>
+            </div>
+            <h3>Education · <em>Computer Science foundations</em></h3>
+            <ul class="bullets">
+              <li>Algorithms, OS, databases, software engineering.</li>
+              <li>Capstone work in mobile + web full‑stack projects.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <header class="section__head">
+        <span class="section__num">// 03</span>
+        <h2>stack.matrix</h2>
+        <p class="section__sub">Tools wired into the daily workflow.</p>
+      </header>
+
+      <div class="skills">
+        <article class="skillcard" style="--accent: var(--neon-green)">
+          <header><h3>QA &amp; Automation</h3><span>core</span></header>
+          <ul>
+            <li><span>Selenium</span><i class="bar" style="--p:90%"></i></li>
+            <li><span>Appium</span><i class="bar" style="--p:82%"></i></li>
+            <li><span>Test Design</span><i class="bar" style="--p:85%"></i></li>
+          </ul>
+        </article>
+        <article class="skillcard" style="--accent: var(--neon-blue)">
+          <header><h3>Backend</h3><span>services</span></header>
+          <ul>
+            <li><span>Node.js</span><i class="bar" style="--p:80%"></i></li>
+            <li><span>Express.js</span><i class="bar" style="--p:78%"></i></li>
+            <li><span>FastAPI</span><i class="bar" style="--p:70%"></i></li>
+          </ul>
+        </article>
+        <article class="skillcard" style="--accent: var(--neon-magenta)">
+          <header><h3>Frontend</h3><span>ui</span></header>
+          <ul>
+            <li><span>React</span><i class="bar" style="--p:78%"></i></li>
+            <li><span>Flutter</span><i class="bar" style="--p:75%"></i></li>
+            <li><span>Tailwind / HTML&nbsp;CSS</span><i class="bar" style="--p:85%"></i></li>
+          </ul>
+        </article>
+        <article class="skillcard" style="--accent: var(--neon-amber)">
+          <header><h3>Languages &amp; DB</h3><span>fluent</span></header>
+          <ul>
+            <li><span>JavaScript</span><i class="bar" style="--p:85%"></i></li>
+            <li><span>Python</span><i class="bar" style="--p:78%"></i></li>
+            <li><span>Dart</span><i class="bar" style="--p:72%"></i></li>
+            <li><span>MongoDB</span><i class="bar" style="--p:75%"></i></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <header class="section__head">
+        <span class="section__num">// 04</span>
+        <h2>build.archive</h2>
+        <p class="section__sub">Selected products. Tap a card to expand.</p>
+      </header>
+
+      <div class="projects">
+        <article class="proj" tabindex="0">
+          <div class="proj__screen">
+            <div class="proj__bar"><span></span><span></span><span></span></div>
+            <div class="proj__art proj__art--tutor">
+              <div class="blob"></div><div class="blob blob--2"></div>
+              <span class="proj__label">TutorHub</span>
+            </div>
+          </div>
+          <div class="proj__body">
+            <h3>TutorHub</h3>
+            <p class="proj__line"><b>Problem:</b> students struggle to find local tutors fast.</p>
+            <p class="proj__line"><b>Solution:</b> mobile app matching learners to tutors by subject &amp; geo‑proximity.</p>
+            <ul class="bullets">
+              <li>Real‑time updates &amp; smooth chat.</li>
+              <li>Filtering by subject + 2–3 km radius.</li>
+              <li>Session management &amp; messaging.</li>
+            </ul>
+            <div class="chips"><span>Flutter</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+            <div class="proj__links">
+              <a href="#" rel="noopener">student app ↗</a>
+              <a href="#" rel="noopener">teacher app ↗</a>
+              <a href="#" rel="noopener">backend ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj" tabindex="0">
+          <div class="proj__screen">
+            <div class="proj__bar"><span></span><span></span><span></span></div>
+            <div class="proj__art proj__art--country">
+              <div class="globe"></div>
+              <span class="proj__label">CountryVisitor</span>
+            </div>
+          </div>
+          <div class="proj__body">
+            <h3>Country Visitor</h3>
+            <p class="proj__line"><b>Problem:</b> travellers lose track of countries they've explored.</p>
+            <p class="proj__line"><b>Solution:</b> a React app to log &amp; visualize travel history.</p>
+            <ul class="bullets">
+              <li>Track countries with metadata.</li>
+              <li>Visual progress dashboard.</li>
+              <li>Persistent data with smooth UX.</li>
+            </ul>
+            <div class="chips"><span>React</span><span>JavaScript</span><span>CSS</span></div>
+            <div class="proj__links">
+              <a href="https://my-traveling-countries.netlify.app/" target="_blank" rel="noopener">live ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj" tabindex="0">
+          <div class="proj__screen">
+            <div class="proj__bar"><span></span><span></span><span></span></div>
+            <div class="proj__art proj__art--english">
+              <div class="wave"></div>
+              <span class="proj__label">English by Janala</span>
+            </div>
+          </div>
+          <div class="proj__body">
+            <h3>English by Janala</h3>
+            <p class="proj__line"><b>Problem:</b> learners need quick, friendly vocabulary practice.</p>
+            <p class="proj__line"><b>Solution:</b> dynamic web app with lessons &amp; audio playback.</p>
+            <ul class="bullets">
+              <li>Vocabulary by lesson.</li>
+              <li>Audio playback for pronunciation.</li>
+              <li>Clean, focused UI.</li>
+            </ul>
+            <div class="chips"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+            <div class="proj__links">
+              <a href="#" rel="noopener">github ↗</a>
+              <a href="#" rel="noopener">live ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section">
+      <header class="section__head">
+        <span class="section__num">// 05</span>
+        <h2>achievements.unlock</h2>
+        <p class="section__sub">Courses &amp; certifications collected along the way.</p>
+      </header>
+
+      <ul class="badges">
+        <li class="badge"><span class="badge__icon">🤖</span><h3>AI / ML Expert</h3><small>Phitron</small></li>
+        <li class="badge"><span class="badge__icon">🌐</span><h3>Complete Web Development</h3><small>Programming‑Hero</small></li>
+        <li class="badge"><span class="badge__icon">📱</span><h3>Flutter &amp; Dart</h3><small>Udemy</small></li>
+        <li class="badge"><span class="badge__icon">📊</span><h3>Data Science with Python</h3><small>Grad Bunker Learning Hub</small></li>
+        <li class="badge"><span class="badge__icon">⌨️</span><h3>C for Everyone</h3><small>Coursera</small></li>
+        <li class="badge"><span class="badge__icon">🎤</span><h3>Business English: Presentations</h3><small>Coursera</small></li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <header class="section__head">
+        <span class="section__num">// 06</span>
+        <h2>open_channel()</h2>
+        <p class="section__sub">The fastest way to reach the engineer.</p>
+      </header>
+
+      <div class="contact">
+        <ul class="contact__list">
+          <li><span>email</span><a href="mailto:thisisrashedul@gmail.com">thisisrashedul@gmail.com</a></li>
+          <li><span>phone</span><a href="tel:+8801794876373">+880 1794 876 373</a></li>
+          <li><span>github</span><a href="https://github.com/Rashedul98" target="_blank" rel="noopener">github.com/Rashedul98</a></li>
+          <li><span>linkedin</span><a href="https://www.linkedin.com/in/thisisrashedul1998" target="_blank" rel="noopener">/in/thisisrashedul1998</a></li>
+          <li><span>location</span><span>Dhaka, Bangladesh</span></li>
+        </ul>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <label>name<input type="text" name="name" required autocomplete="name" maxlength="80" /></label>
+          <label>email<input type="email" name="email" required autocomplete="email" maxlength="120" /></label>
+          <label>message<textarea name="message" rows="4" required maxlength="2000"></textarea></label>
+          <button type="submit" class="btn btn--primary">transmit ↦</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div>© <span id="yr"></span> Muhammad Rashedul Islam · built in the terminal, with care.</div>
+    <div class="foot__hint">tip: press <kbd>/</kbd> to summon the assistant</div>
+  </footer>
+
+  <!-- AI Assistant -->
+  <button id="aiOpen" class="ai__fab" aria-label="Open assistant" aria-controls="aiPanel" aria-expanded="false">
+    <span class="ai__fab__pulse"></span>
+    <span class="ai__fab__icon">/</span>
+    <span class="ai__fab__text">Ask&nbsp;about&nbsp;me</span>
+  </button>
+
+  <aside id="aiPanel" class="ai" role="dialog" aria-modal="false" aria-labelledby="aiTitle" hidden>
+    <header class="ai__head">
+      <h3 id="aiTitle">assistant.r <span class="pulse"></span></h3>
+      <button id="aiClose" class="iconbtn" aria-label="Close">✕</button>
+    </header>
+    <div class="ai__log" id="aiLog" aria-live="polite"></div>
+    <div class="ai__suggest" id="aiSuggest">
+      <button data-q="skills">skills</button>
+      <button data-q="projects">projects</button>
+      <button data-q="experience">experience</button>
+      <button data-q="contact">contact</button>
+      <button data-q="education">education</button>
+      <button data-q="fun">surprise me</button>
+    </div>
+    <form class="ai__form" id="aiForm">
+      <span class="prompt">&gt;</span>
+      <input id="aiInput" type="text" autocomplete="off" placeholder="ask anything about rashedul…" />
+      <button type="submit" aria-label="Send">↵</button>
+    </form>
+  </aside>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
